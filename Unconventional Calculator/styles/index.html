@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>CALCULATOR</title>
+    <style type="text/css">
+
+        * {
+        box-sizing: border-box;
+        }
+
+
+
+        body {
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0;
+        }
+
+        .div1{
+
+            width:100%;
+            padding:1rem;
+            text-align: center;
+            background-color: #023d6d;
+
+        }
+
+        h1{
+            float: inline-start;
+            color:white;
+        }
+
+        #results,
+        #calculator{
+            margin:2rem auto;
+            width: 40rem;
+            max-width: 90%;
+            border: 1px solid #023d6d;
+            border-radius: 10px;
+            padding: 1rem;
+            color: #023d6d;
+        }
+
+        #results{
+            text-align: center;
+        }
+
+        #calculator input{
+            font:inherit;
+            font-size:  3rem;
+            border: 2px solid #023d6d;
+            width:10rem;
+            padding:0.15rem;
+            margin: auto;
+            display: block;
+            color: #023d6d;
+            text-align: center;
+        }
+
+        #calculator input:focus{
+            outline:none;
+        }
+
+        #calculator button{
+            font: inherit;
+            background: #023d6d;
+            color: white;
+            border: 1px solid #023d6d;
+            padding:1rem;
+            cursor: pointer;
+        }
+
+        #calculator button:focus {
+            outline: none;
+        }
+
+        #calculator button:hover,
+        #calculator button:active {
+        background: #084f88;
+        border-color: #084f88;
+        }
+
+        #calc-actions button {
+        width: 4rem;
+        }
+
+        #calc-actions {
+        margin-top: 1rem;
+        text-align: center;
+        }
+
+    </style>
+
+
+<script src="C:\Users\kadya\OneDrive\Desktop\Web D\javascript\Maximilian\scripts\vendor.js" defer></script>
+<script src="C:\Users\kadya\OneDrive\Desktop\Web D\javascript\Maximilian\scripts\app.js" defer></script>
+
+
+</head>
+
+<body>
+   
+    <div class="div1">
+
+        <h1 >The Unconventional Calculator</h1>
+
+
+    </div>
+
+
+    <section id="calculator">
+        <input type="number" id="input-number"/>
+        <div id="calc-actions">
+            <button typt="button" id="btn-add">+</button>
+            <button typt="button" id="btn-subtract">-</button>
+            <button typt="button" id="btn-multiply">*</button>
+            <button typt="button" id="btn-divide">/</button>
+        </div>
+    </section>
+
+
+
+    <section id="results">
+
+        <h2 id="current-calculation">0</h2>
+        <h2>Results: <span id="current-result">0</span></h2>
+
+    </section>
+
+  
+
+
+
+
+</body>
+</html>
